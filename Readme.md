@@ -31,6 +31,6 @@ How to Execute:
 
 
 Screeshots:-
-1)[Preview image](https://github.com/venk404/PyFlask-ContactForm/blob/main/static/Preview image.png)
+1)[Preview image](https://github.com/venk404/PyFlask-ContactForm/blob/main/static/Preview_image.png)
 
 
