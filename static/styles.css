@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+   
+}
+
+.container {
+    height: 100vh;
+    background-color: #9ec4fb;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.outer-conainer{
+    display: flex;
+    background-color: #02044a;
+    width: 80%;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+label{
+    margin-bottom: 10px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.input{
+  width: 90%;
+  min-height: 20px; /* Minimum height of the box */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #1b7dff;
+  border-radius: 5px;
+
+}
+
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: fit-content;
+    width: 50%;
+    margin: 20px;
+    background-color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+
+#msgs{ 
+  height: 100px;
+  resize: none;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center; /* Center items horizontally within the wrapper */
+  }
+
+
+ /* Default styles for .custom-button */
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff; /* Change the background color to your preferred color */
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+}
+
+/* Media query for responsiveness on smaller screens */
+
+
+  
+  /* Hover effect */
+  .custom-button:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+
+  .right{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  overflow-wrap: break-word;
+  padding: 10px;
+  align-self: center;
+  font-family: "Sofia", sans-serif;
+  text-shadow: 3px 3px 3px #ababab;
+
+}
+
+img {
+  display: block; /* Ensure the image behaves as a block-level element */
+  margin: auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  height: 50vh; /* Set the maximum height for the image */
+  mix-blend-mode: multiply;
+}
+
+/* Styles for the socials container and list */
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.socials ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 10px; /* Add some spacing between the icons */
+}
+
+.socials svg {
+  flex-shrink: 2;
+  width: 20px;
+  height: 20px;
+  fill: #02044a; /* Replace with the color you want for the icons */
+  transition: fill 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect for the icons */
+.socials svg:hover {
+  fill: #007bff; /* Replace with the color you want on hover */
+}
+
+
+@media (max-width: 768px) {
+  .custom-button {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+
+
+}
+
+
+@media (min-wdth<300px){
+  .socials svg {
+    width: 10px;
+    height: 10px;
+  }
+}
